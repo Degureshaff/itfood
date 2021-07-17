@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/mystyle.css">
+    <script src="/static/css/bootstrap/js/bootstrap.js"></script>
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class='slider' style='margin-bottom: 20px;'>
+    {% include 'slaider.html' %}
+    </div>
+    <div class='container message mt-3 mb-3'>
+        {% include 'messages.html' %}
+    </div>
+    <div class='app'>
+    {% block content %}{% endblock %}
+    </div>
+    <!-- <div class='otzyv'>
+    {% include 'otzyv.html' %}
+    </div> -->
+    <div class='footer-st'>
+    {% include 'footer-st.html' %}
+    </div>
+
+</body>
+</html>

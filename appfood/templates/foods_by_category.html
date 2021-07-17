@@ -1,0 +1,13 @@
+{% extends 'main-layout.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1>
+            <img src="{{ category.image.url }}" 
+                style="width: 96px;">
+            {{ category.name }}
+        </h1>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            {% {% include "components/foods_list.html" %}
+    </div>
+{% endblock %}

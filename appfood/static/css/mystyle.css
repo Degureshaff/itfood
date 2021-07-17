@@ -1,0 +1,47 @@
+
+.bg-mygradient {
+    background-color: aquamarine;
+}
+
+/* {% include 'header.html' %} */
+
+.sticky-footer {
+  flex-shrink: none;
+}
+
+body {
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 26%, rgba(36,203,187,1) 49%, rgba(40,223,170,1) 68%, rgba(45,253,145,1) 92%);
+}
+
+
+.food-sale-price {
+  color: rgb(182, 8, 8);
+  font-weight: bolder;
+}
+
+.dish-card-footer {
+  padding: 0 !important;
+}
+
+.food-detail-container{
+  display:flex;
+  justify-content:center;
+}
+
+.food-detail-center{
+  width: 900px;
+}
+
+.font-2x {
+  font-size: 1.2rem;
+}
+.food-detail-desc {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.mr-4 {
+  margin-right: 20px;
+}
+

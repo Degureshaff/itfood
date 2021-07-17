@@ -1,0 +1,30 @@
+    {% for food in foods %}
+        <div class="col">
+            <div class="card border-light h-100 w-100 text-center">
+                <img src="{{food.image.url}}" 
+                class="card-img-top"
+                style='height: 300px'
+                >
+                <div class="card-body">
+                    <h5 
+                        class="card-title text-center">
+                        {{ food.name }}
+                    </h5>
+                    <p class="card-text">
+                        <span class="food-sale-price">{{ food.sale_prise|floatformat }}</span>
+                    </p>
+                    <div class='card-footer dish-card-footer d-grid gap-2'>
+                      <div class='btn-group'>
+                            <a href="/eda/card/add/{{ food.id }}?prev={{ request.path|urlencode }}" class="btn btn-outline-success btn-block btn-light">
+                                <img src="/static/images/cor1.png" width="24">
+                            </a>
+                            <a href="/eda/detail/{{ food.id }}" class='btn btn-outline-warning'>
+                                Просмотр
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>

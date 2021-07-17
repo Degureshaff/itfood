@@ -1,0 +1,10 @@
+{% extends 'main-layout.html' %}
+
+{% block content %}
+    <h1 class="text-center">Товары в корзине</h1>
+    <div class="container food-card-container">
+        {{ foods_ids }}
+        {% include 'components/card_foods_table.html' %}
+        {% include 'form_order_add.html' %}
+    </div>
+{% endblock %}

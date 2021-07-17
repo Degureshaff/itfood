@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">ITfood</a>
+      <button class="navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          {% for foodCategory in foodCategories %}
+          <li class="nav-item">
+            <a class="nav-link" href="/eda/category/{{foodCategory.id}}"> <img src="{{ foodCategory.image.url }}" width='32'>
+            {{ foodCategory.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="d-flex">
+        <a  href='eda/card/view' class='mr-4'>
+          <img src='/static/images/cor1.png' width='32'>
+        </a>
+      </div>
+        <nav class="nav nav-pills justify-content-end">
+          <span class="nav-item">
+            <a href="/log/" class="nav-link">Войти</a>
+        </span>
+    </div>
+  </nav>
